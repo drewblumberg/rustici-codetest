@@ -37,7 +37,7 @@ The order of the choices within each question should also be randomized.
 */
 function RandomizeTest(tstObject){
   // JSON objects of original questions and answers
-	var qa = [];
+  var qa = [];
   _.forEach(tstObject.questions, function(question, i){
     var answers = [];
     _.forEach(tstObject.choices, function(choice, j){
@@ -80,7 +80,7 @@ function RandomizeTest(tstObject){
   tstObject.choices = newChoices;
   tstObject.answers = newAnswers;
 
-	return tstObject;
+  return tstObject;
 }
 
 
